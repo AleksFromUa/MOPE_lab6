@@ -222,8 +222,6 @@ for _ in range(100):
     sad = sum([(x - y) ** 2 for x, y in zip(y0, middles_y)])
     kof = sad / disB
     print("Fp = " + str(kof))
-    zn += count
-    nz += N-count
     fp = stats.f.ppf(0.95, count, f3)
     f_ppf_sum += fp
     if kof <= fp:  # Перевірка адекватності за критерієм Фішера
